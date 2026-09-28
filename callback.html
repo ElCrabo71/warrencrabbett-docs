@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Crabo Robot — Authorization</title></head>
+<body>
+<h1>Authorization complete</h1>
+<p>Copy this code back into the Crabo uploader on your computer:</p>
+<pre id="code" style="font-size:1.3em;padding:1em;background:#f0f0f0;"></pre>
+<script>
+const params = new URLSearchParams(window.location.search);
+document.getElementById('code').textContent = params.get('code') || '(no code found in URL)';
+</script>
+</body></html>
